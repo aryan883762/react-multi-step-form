@@ -1,0 +1,103 @@
+.step-form {
+  padding:20px;
+ .heading-step-form {
+   color: #595a5a;
+   font-size: 24px;
+   margin-left: 50px;
+   margin-bottom: 30px;font-weight: 600;
+ }
+ .step-side {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: #fff;
+   @media screen and (max-width: 765px) {
+     flex-direction: row;
+   }
+  
+   .step-number {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 14px;
+     width: 30px;
+     height: 30px;
+     border-radius: 50px;
+     // color: #ffffff !important;
+   }
+   .step-with-description {
+     min-width: 140px;
+     height: auto;
+     flex-direction: column;
+     padding: 5px 20px;
+   }
+   .step-selected {
+     background-color: $secondary-light;
+   }
+   .step-selected-line {
+     background-color: $secondary-light;
+   }
+   .step-number {
+     &.step-selected {
+      width: 22px!important;
+      height: 22px!important;
+     }
+   }
+   .step-number.step-selected.circle {
+    width: 30px!important;
+    height: 30px!important;
+   }
+   .step-not-selected {
+     background-color: $grey-light
+   }
+   .step-number.step-not-selected   {
+    display: none!important;
+   }
+   .step-line {
+     width: 55px;
+     height: 4px;
+     @media screen and (max-width: 765px) {
+       display: flex;
+       justify-content: center;
+       height: 2px;
+       width: 15px;
+     }
+   }
+   .step-line.step-not-selected {
+     width: 85px!important;
+   }
+
+   .circle {
+     border: 3px solid #fff;
+     border-radius: 50px;
+    // box-shadow: 0px 0px 4px #1b8572;
+     position: relative;
+     &::before{
+       content: "";
+       position: absolute;
+       z-index: 1;
+       width: 33px;
+       height: 33px;
+       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14)!important;
+      //  border: 2px solid #1b8572;
+       border-radius: 50px;
+      
+     }
+   }
+ }
+}
+
+.step-heading {
+ font-size: 17px;
+ color: gray;
+ margin-left: 10px;
+ margin-bottom: 10px;
+}
+
+.step-form-label {
+ font-weight: bold;
+ font-size:21px;
+ color: #595a5a;margin-top: 8px;
+ margin-bottom: 10px;
+}
+

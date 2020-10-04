@@ -1,0 +1,48 @@
+.registration-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .form-container {
+        width: 400px;
+        margin: 20px auto!important;
+    }
+
+    .arrow_box {
+        position: absolute;
+        background: #ffffff;
+        border: 1px solid #dadada;
+        z-index: 9;
+        right: -270px;
+        top: -70px;
+        height: 180px;
+        width: 250px;
+      }
+      .arrow_box:after, .arrow_box:before {
+          right: 100%;
+          top: 50%;
+          border: solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+      }
+      
+      .arrow_box:after {
+          border-color: rgba(52, 73, 94, 0);
+          border-right-color: #fff;
+          border-width: 15px;
+          margin-top: -15px;
+      }
+      .arrow_box:before {
+          border-color: rgba(45, 204, 112, 0);
+          border-right-color:#dadada;
+          border-width: 18px;
+          margin-top: -18px;
+      }
+      
+      .arrow_box p {
+        padding: 0 1em;
+      }
+}
